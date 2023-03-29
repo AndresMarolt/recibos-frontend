@@ -1,0 +1,47 @@
+.admin-header {
+    height: 10vh;
+    background-color: rgb(150, 0, 0)
+}
+
+.admin-header h4 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.admin-content {
+    min-height: 85vh;
+}
+
+.admin-footer {
+    height: 5vh;
+    background-color: rgb(150, 0, 0);
+}
+
+.admin-footer h6 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.admin-link {
+    color: rgb(150, 0, 0);
+    border: 1px solid rgb(150, 0, 0);
+}
+
+.admin-link:hover {
+    background-color: rgb(150, 0, 0);   
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+ul {
+    
+}
+
+li a {
+    /* background-color: rgb(150, 0, 0); */
+    /* background-color: gray; */
+    padding: 15px;
+    border-radius: 8px;
+}

@@ -1,0 +1,10 @@
+.receipt-container {
+    border: 1px solid black;
+    margin: 50px auto 10px auto;
+    width: 90%;
+}
+
+.receipt-section {
+    border-bottom: 3px solid black;
+    padding: 10px 20px;
+}

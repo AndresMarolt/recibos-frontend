@@ -1,0 +1,27 @@
+.login_form_container {
+  height: 100vh;
+}
+
+.login_form_container .login_form {
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+  color: #960000;
+}
+
+.login_form_container .login_form button.login_submit {
+  background-color: #960000;
+  color: white;
+}
+
+.login_form_container .login_form button.login_submit:hover {
+  background-color: #820000;
+  color: white;
+}
+
+.login_form_container .login_form .alert {
+  position: absolute;
+  color: #960000;
+  width: 100%;
+}

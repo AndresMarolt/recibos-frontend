@@ -1,0 +1,83 @@
+.no-border {
+    border: none;
+}
+
+.payment_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.payment_fields .payment_field {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+}
+
+.payment_field-left {
+    display: flex;
+    gap: 5px;
+    width: 78%;
+}
+
+.payment_field-left input {
+    width: 100%;
+    font-size: .8rem;
+}
+
+.payment_field-right {
+    width: 17%;
+    margin-right: 10px;
+    z-index: 1;
+    text-align: center;
+}
+
+p.total {
+    position: relative;
+    left: 60%;
+    width: 40%;
+    font-weight: bold;
+}
+
+div.bold_rectangle {
+    border: 3px solid black;
+    position: absolute;
+    height: 110%;
+    width: 20%;
+    bottom: -6%;
+    right: 0%;
+}
+
+.payment_text {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+    z-index: 11;
+}
+
+.payment_text input {
+    width: 100%;
+    border: none;
+    padding: 0;
+    font-size: .8rem;
+    margin-top: 3px;
+}
+
+div.sign {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.sign p {
+    justify-self: flex-end;
+    text-align: center;
+    border-top: 2px dotted black;
+}

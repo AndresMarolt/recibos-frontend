@@ -1,0 +1,47 @@
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    margin-top: 2px;
+    text-overflow: '';
+    border: none;
+    display: flex;
+}
+
+.footer {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: .8rem;
+}
+
+.footer p {
+    display: block;
+}
+
+.footer_ending {
+    width: 70%;
+}
+
+.footer_ending p {
+    margin-bottom: 10px;
+}
+
+.footer_signing {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    margin-top: 30px;
+}
+
+.signing_container {
+    width: 100%;
+    border-top: 2px dotted black;
+}
+
+.signing_container p {
+    text-align: center;
+}

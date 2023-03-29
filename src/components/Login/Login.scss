@@ -1,0 +1,26 @@
+.login_form_container {
+    height: 100vh;
+    .login_form {
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 2px 2px 3px 1px black;
+        color: rgb(150, 0, 0);
+    
+        button.login_submit {
+            background-color: rgb(150, 0, 0);
+            color: white;
+    
+            &:hover {
+                background-color: rgb(130, 0, 0);
+                color: white;
+            }
+        }
+        
+        .alert {
+            position: absolute; 
+            color: rgb(150, 0, 0);
+            width: 100%;
+    
+        }
+    }
+} 

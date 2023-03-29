@@ -1,0 +1,31 @@
+
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+}
+
+.field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    margin-top: 2px;
+    text-overflow: '';
+    font-size: .8rem;
+    border: none;
+    display: flex;
+}
+
+.field_container {
+    display: flex;
+}
+
+.field-long {
+    width: 65%;
+}
+
+.field-short {
+    width: 65%;
+}

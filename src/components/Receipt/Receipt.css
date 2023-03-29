@@ -1,0 +1,14 @@
+.container {
+    /* width: 75%;
+    
+    margin: 0 auto; */
+}
+
+#print {
+    border: 1px solid rgb(150, 0, 0);
+}
+
+#admin_btn {
+    color: white;
+    background-color: rgb(150, 0, 0);
+}

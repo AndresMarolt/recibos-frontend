@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    text-align: center;
+}
+
+.header_first {
+    width: 40%;
+}
+
+.header_middle {
+    background: linear-gradient(#fff 0%, #FFF 55%, #000 55.1%, #000 100%) no-repeat center/2px 100%;
+    width: 20%;
+}
+
+.header_last {
+    width: 45%;
+}
+
+.header_last_info {
+    text-align: left;
+}
+
+.receipt_number {
+    text-align: right;
+    width: 25%;
+}
+
+img {
+    width: 70%;
+}
+
+.receipt-class {
+    font-weight: bold;
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20%;
+    margin: 0 auto;
+}

@@ -37,8 +37,6 @@ const Modal = ({mode, setShowModal}) => {
         }
 
         setShowModal(false);
-        document.body.style.overflow = "scroll";
-
     }
 
     const handleChange = (e) => {
@@ -58,7 +56,7 @@ const Modal = ({mode, setShowModal}) => {
                             <h1 className='heading'>{mode} inquilino</h1>
                         </div>
 
-                        <button className='closeBtn' onClick={() => {setShowModal(false); document.body.style.overflow = "scroll";}}>
+                        <button className='closeBtn' onClick={() => {setShowModal(false)}}>
                             <FontAwesomeIcon icon={faXmark} style={{ marginBottom: "-3px" }} />
                         </button>
 

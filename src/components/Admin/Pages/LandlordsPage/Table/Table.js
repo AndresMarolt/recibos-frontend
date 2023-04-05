@@ -2,7 +2,7 @@ import {useTable} from 'react-table'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPenToSquare, faTrash} from '@fortawesome/free-solid-svg-icons'
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteTenant } from '../../../../../redux/actions/tenants';
+import { deleteLandlord } from '../../../../../redux/actions/landlords';
 
 const Table = ({columns, onEdit}) => {
 
@@ -21,7 +21,7 @@ const Table = ({columns, onEdit}) => {
     });
       
     const removeTenant = (id) => {
-        dispatch(deleteTenant(id));
+        dispatch(deleteLandlord(id));
     }
 
     return(

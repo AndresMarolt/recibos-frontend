@@ -19,13 +19,11 @@ const TenantsPage = () => {
     const onEdit = async (id) => {
         setIsEditing(true);
         await dispatch(getTenant(id))
-        // document.body.style.overflow = "hidden";
         setShowModal(true);
     }
 
     const onAdd = async () => {
         setIsEditing(false); 
-        document.body.style.overflow = "hidden";
         setShowModal(true);
     }
 

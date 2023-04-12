@@ -17,7 +17,7 @@ const ReceiptTenant = ({onSelection}) => {
     return(
         <div className="receipt-section tenant">
             <div className="field">
-                <p>Señor:</p>
+                <p>Señor/a:</p>
 
                 <select onChange={handleChange}>
                     <option></option>

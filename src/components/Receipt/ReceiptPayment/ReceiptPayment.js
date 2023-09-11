@@ -106,9 +106,12 @@ const ReceiptPayment = ({tenant}) => {
 
             <div className="d-flex align-items-center mt-3">
                 <div className="sign">
-                    <p>
-                        Graciela Antonelli - Estudio Inmobiliario 
-                    </p>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./img/firma.png"/>
+                        <p>
+                            Graciela Antonelli - Estudio Inmobiliario 
+                        </p>
+                    </div>
                 </div>
             </div>
 

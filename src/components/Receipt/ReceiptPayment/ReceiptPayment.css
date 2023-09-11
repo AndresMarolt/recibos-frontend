@@ -76,8 +76,17 @@ div.sign {
     justify-content: flex-end;
 }
 
+div.sign div {
+    position: relative;
+}
+
 div.sign p {
     justify-self: flex-end;
     text-align: center;
     border-top: 2px dotted black;
+}
+
+div.sign img {
+    width: 90px;
+    height: 50px;
 }

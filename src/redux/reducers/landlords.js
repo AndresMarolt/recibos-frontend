@@ -1,6 +1,6 @@
 import { START_LOADING, FINISH_LOADING, FETCH_LANDLORDS, FETCH_LANDLORD, CREATE_LANDLORD, UPDATE_LANDLORD, DELETE_LANDLORD } from "../../constants/actionTypes"
 
-export default (state = {isLoading: true, landlords: []}, action) => {
+const landlordsReducer = (state = {isLoading: true, landlords: []}, action) => {
     switch(action.type) {
         case START_LOADING:
             return {...state, isLoading: true}
@@ -20,3 +20,5 @@ export default (state = {isLoading: true, landlords: []}, action) => {
             return state;
     }
 }
+
+export default landlordsReducer;

@@ -1,6 +1,6 @@
-import { START_LOADING, FINISH_LOADING, FETCH_LANDLORDS, FETCH_LANDLORD, CREATE_LANDLORD, UPDATE_LANDLORD, DELETE_LANDLORD } from "../../constants/actionTypes"
+// unused action types removed since they aren't referenced here
 
-export default (state = {authData: null, error: null, isLoading: true}, action) => {
+const userReducer = (state = {authData: null, error: null, isLoading: true}, action) => {
     switch(action.type) {
         case 'AUTH':
             localStorage.setItem('token', action.apiRes.data.token);
@@ -17,3 +17,5 @@ export default (state = {authData: null, error: null, isLoading: true}, action) 
             return state;
     }
 }
+
+export default userReducer;

@@ -1,11 +1,10 @@
 import "./ReceiptTemplate.css";
 import { useState } from "react";
-import ReceiptHeader from "../ReceiptHeader/ReceiptHeader";
 import ReceiptTenant from "../ReceiptTenant/ReceiptTenant";
 import ReceiptLandlord from "../ReceiptLandlord/ReceiptLandlord";
 import ReceiptPayment from "../ReceiptPayment/ReceiptPayment";
 import ReceiptFooter from "../ReceiptFooter/ReceiptFooter";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getTenants } from "../../../redux/actions/tenants";
 import { getLandlords } from "../../../redux/actions/landlords";
 

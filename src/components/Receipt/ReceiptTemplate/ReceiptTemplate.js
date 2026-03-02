@@ -1,36 +1,33 @@
-import "./ReceiptTemplate.css"
-import { useState } from "react"
-import ReceiptHeader from "../ReceiptHeader/ReceiptHeader"
-import ReceiptTenant from "../ReceiptTenant/ReceiptTenant"
-import ReceiptLandlord from "../ReceiptLandlord/ReceiptLandlord"
-import ReceiptPayment from "../ReceiptPayment/ReceiptPayment"
-import ReceiptFooter from "../ReceiptFooter/ReceiptFooter"
+import "./ReceiptTemplate.css";
+import { useState } from "react";
+import ReceiptHeader from "../ReceiptHeader/ReceiptHeader";
+import ReceiptTenant from "../ReceiptTenant/ReceiptTenant";
+import ReceiptLandlord from "../ReceiptLandlord/ReceiptLandlord";
+import ReceiptPayment from "../ReceiptPayment/ReceiptPayment";
+import ReceiptFooter from "../ReceiptFooter/ReceiptFooter";
 import { useDispatch, useSelector } from "react-redux";
-import { getTenants } from "../../../redux/actions/tenants"
-import { getLandlords } from "../../../redux/actions/landlords"
+import { getTenants } from "../../../redux/actions/tenants";
+import { getLandlords } from "../../../redux/actions/landlords";
 
 const ReceiptTemplate = (category) => {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
-    
-    dispatch(getTenants());
-    dispatch(getLandlords());
+  dispatch(getTenants());
+  dispatch(getLandlords());
 
-    const [tenant, setTenant] = useState(null);
+  const [tenant, setTenant] = useState(null);
 
-    return(
-        <section className="receipt-container">
-            <ReceiptHeader />
+  return (
+    <section className="receipt-container">
+      <ReceiptTenant onSelection={setTenant} />
 
-            <ReceiptTenant onSelection={setTenant}/>
+      <ReceiptLandlord />
 
-            <ReceiptLandlord />
+      <ReceiptPayment tenant={tenant} />
 
-            <ReceiptPayment tenant={tenant} />
+      <ReceiptFooter />
+    </section>
+  );
+};
 
-            <ReceiptFooter />
-        </section>
-    )
-}
-
-export default ReceiptTemplate
+export default ReceiptTemplate;
